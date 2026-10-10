@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Akash Fokane</title>
+  <meta name="description"
+    content="Portfolio of an embedded systems engineer — firmware, RTOS, and hardware/software integration.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Alegreya:wght@400;500;600;700&family=Alegreya+Sans:wght@400;500&family=JetBrains+Mono:wght@400;500&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div class="shell">
+
+    <aside class="sidebar">
+      <div>
+        <h1 class="sb-top-name">Akash Fokane</h1>
+        <p class="sb-role">Embedded Firmware Engineer</p>
+
+        <nav class="sb-nav" id="sbNav">
+          <a href="#resume" data-target="resume"><span class="tick"></span><span class="label">Resume</span></a>
+          <a href="#experience" data-target="experience"><span class="tick"></span><span
+              class="label">Experience</span></a>
+          <a href="#projects" data-target="projects"><span class="tick"></span><span class="label">Projects</span></a>
+          <a href="#contact" data-target="contact"><span class="tick"></span><span class="label">Contact</span></a>
+        </nav>
+      </div>
+
+      <div class="sb-bottom">
+        <a class="sb-resume" href="akash-resume.pdf" target="_blank">Resume (PDF) →</a>
+        <div class="sb-socials">
+          <a href="https://github.com/akash-fokane" target="_blank" rel="noopener">GitHub</a>
+          <a href="https://linkedin.com/in/akashfokane" target="_blank" rel="noopener">LinkedIn</a>
+          <a href="mailto:akashfokane2507@gmail.com">Email</a>
+        </div>
+      </div>
+    </aside>
+
+    <nav class="mobile-nav" id="mobileNav">
+      <a href="#resume" data-target="resume">Resume</a>
+      <a href="#experience" data-target="experience">Experience</a>
+      <a href="#projects" data-target="projects">Projects</a>
+      <a href="#contact" data-target="contact">Contact</a>
+    </nav>
+
+    <main class="content">
+
+      <section id="resume" class="reveal">
+        <p class="num-label"><span>01</span><span class="rule"></span><span class="txt">Technical Skills</span></p>
+
+        <dl class="skills">
+          <div class="skill-row">
+            <dt>Languages</dt>
+            <dd><b>Embedded C</b>, C++, Python, MATLAB, Assembly, SystemVerilog, Verilog</dd>
+          </div>
+          <div class="skill-row">
+            <dt>Platforms</dt>
+            <dd><b>TI C2000 (TMS320F28379D)</b>, ARM Cortex-M (Tiva C), 8051, Altera MAX10, Krypton CPLD</dd>
+          </div>
+          <div class="skill-row">
+            <dt>Protocols</dt>
+            <dd>CAN, SPI, UART, I2C, Ethernet, MVB</dd>
+          </div>
+          <div class="skill-row">
+            <dt>Tools</dt>
+            <dd>CMake, Git, JTAG, CCS, ModelSim, Quartus Prime, Ngspice</dd>
+          </div>
+        </dl>
+      </section>
+
+      <section id="experience" class="reveal">
+        <p class="num-label"><span>02</span><span class="rule"></span><span class="txt">Experience</span></p>
+
+        <div class="timeline">
+          <div class="tl-item">
+            <div class="tl-head">
+              <div><span class="tl-role">Embedded Engineer</span> · <span class="tl-org">Hind Rectifiers</span></div>
+              <div class="tl-date">Jul 2024 — Present</div>
+            </div>
+            <ul>
+              <li>Implemented inter-subsystem communication using CAN, MVB (over SPI), and Ethernet, enabling seamless
+                integration and coordination between multiple embedded subsystems.</li>
+              <li>Developed low-level device drivers for Ethernet controller (ENC28J60), RTC, and EEPROM peripherals
+                over SPI, enabling reliable register-level configuration and data access.</li>
+              <li>Configured Dual-Port RAM (DPRAM) via the EMIF module (memory-mapped I/O) for shared memory access
+                between controllers, reducing latency and improving data throughput.</li>
+              <li>Designed a custom Bootloader for TI TMS320F28379D supporting firmware updates over Ethernet, CAN, and
+                DPRAM with checksum-based data integrity checks.</li>
+            </ul>
+            <div class="tl-stack">TI C2000 · C · Ethernet · CAN · SPI · DPRAM</div>
+          </div>
+
+          <div class="tl-item">
+            <div class="tl-head">
+              <div><span class="tl-role">Hardware Engineer</span> · <span class="tl-org">Samsung Semiconductor India
+                  Research</span></div>
+              <div class="tl-date">May 2022 — Jul 2022</div>
+            </div>
+            <ul>
+              <li>Designed and implemented a synchronous FIFO buffer in SystemVerilog with proper handshaking, pointer
+                management, and full/empty flag logic.</li>
+              <li>Developed a constrained SystemVerilog Testbench with Assertions (SVAs) to verify FIFO functionality
+                and edge conditions, streamlining debugging.</li>
+            </ul>
+            <div class="tl-stack">SystemVerilog · Verification · Hardware Design</div>
+          </div>
+
+          <div class="tl-item">
+            <div class="tl-head">
+              <div><span class="tl-role">Dual Degree (B.Tech + M.Tech), Electrical Engineering</span> · <span
+                  class="tl-org">IIT Bombay</span></div>
+              <div class="tl-date">Jul 2019 — Jun 2024</div>
+            </div>
+            <ul>
+              <li>Specialized in Integrated Circuits with a CGPA of 8.0/10.</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects" class="reveal">
+        <p class="num-label"><span>03</span><span class="rule"></span><span class="txt">Projects</span></p>
+
+        <p class="proj-sublabel">Featured</p>
+        <div class="featured">
+          <div class="feat-card">
+            <div class="feat-title">CHIP-8 Emulator</div>
+            <p class="feat-desc">Built a CHIP-8 emulator in C++ implementing 35+ opcodes via function-pointer dispatch
+              tables for fast decoding, alongside real-time timer synchronization and raylib-based graphics rendering.
+            </p>
+            <div class="feat-foot">
+              <span class="feat-stack">C++ · Raylib · Emulation</span>
+              <div class="feat-links"><a href="https://github.com/akash-fokane" target="_blank" rel="noopener">Repo</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="feat-card">
+            <div class="feat-title">JPEG Encoder on FPGA</div>
+            <p class="feat-desc">Simulated JPEG image compression algorithm using Verilog and utilized MAX10-FPGA for
+              hardware implementation, achieving a 70% compression ratio while maintaining visual quality.</p>
+            <div class="feat-foot">
+              <span class="feat-stack">Verilog · MAX10 FPGA · Hardware</span>
+              <div class="feat-links"><a href="https://github.com/akash-fokane" target="_blank" rel="noopener">Repo</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="feat-card">
+            <div class="feat-title">Elevator Controller</div>
+            <p class="feat-desc">Implemented a multi-floor elevator controller in SystemVerilog using a FSM and the SCAN
+              algorithm for movement direction, door sequencing, and arbitration of requests.</p>
+            <div class="feat-foot">
+              <span class="feat-stack">SystemVerilog · FSM · RTL</span>
+              <div class="feat-links"><a href="https://github.com/akash-fokane" target="_blank" rel="noopener">Repo</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="feat-card">
+            <div class="feat-title">16-Bit Multiplier & Accumulator Circuit</div>
+            <p class="feat-desc">Designed a 16-bit MAC circuit using the Dadda Algorithm and a Brent Kung logarithmic
+              adder for optimized area-time complexity, verified rigorously via GHDL simulations.</p>
+            <div class="feat-foot">
+              <span class="feat-stack">VHDL · GHDL · VLSI</span>
+              <div class="feat-links"><a href="https://github.com/akash-fokane" target="_blank" rel="noopener">Repo</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="reveal">
+        <p class="num-label"><span>04</span><span class="rule"></span><span class="txt">Contact</span></p>
+        <p class="intro" style="margin-bottom:24px; color:var(--text-dim); font-size:15.5px;">Open to embedded and
+          firmware roles.</p>
+        <div class="contact-links">
+          <a href="mailto:akashfokane2507@gmail.com">akashfokane2507@gmail.com</a>
+          <a href="https://github.com/akash-fokane" target="_blank" rel="noopener">github.com/akash-fokane</a>
+          <a href="https://linkedin.com/in/akashfokane" target="_blank" rel="noopener">linkedin.com/in/akashfokane</a>
+        </div>
+      </section>
+
+      <div class="content-footer">Akash Fokane — Last Updated Aug 2026</div>
+
+    </main>
+
+  </div>
+
+  <script src="script.js"> </script>
+
+</body>
+
+</html>
